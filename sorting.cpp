@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
 
-void insertion_sort(int arr[],int n){
-    int i,j,next;
-    for(i=1;i<n;i++){
-        next = arr[i];
-        for(j=i-1;j>=0 && next<arr[j];j--){
-            arr[j+1] = arr[j];
-        }
-        arr[j+1] = next;
-    }
-    for(i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
-}
+// void insertion_sort(int arr[],int n){
+//     int i,j,next;
+//     for(i=1;i<n;i++){
+//         next = arr[i];
+//         for(j=i-1;j>=0 && next<arr[j];j--){
+//             arr[j+1] = arr[j];
+//         }
+//         arr[j+1] = next;
+//     }
+//     for(i=0;i<n;i++){
+//         printf("%d ",arr[i]);
+//     }
+// }
 
 void selection_sort(int a[],int n){
     int i,j,min;
