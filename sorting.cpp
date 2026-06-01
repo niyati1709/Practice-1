@@ -1,20 +1,22 @@
 #include<iostream>
 using namespace std;
 
-// void insertion_sort(int arr[],int n){
-//     int i,j,next;
-//     for(i=1;i<n;i++){
-//         next = arr[i];
-//         for(j=i-1;j>=0 && next<arr[j];j--){
-//             arr[j+1] = arr[j];
-//         }
-//         arr[j+1] = next;
-//     }
-//     for(i=0;i<n;i++){
-//         printf("%d ",arr[i]);
-//     }
-// }
+//code for insertion sort
+void insertion_sort(int arr[],int n){
+    int i,j,next;
+    for(i=1;i<n;i++){
+        next = arr[i];
+        for(j=i-1;j>=0 && next<arr[j];j--){
+            arr[j+1] = arr[j];
+        }
+        arr[j+1] = next;
+    }
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+}
 
+// code for selection sort
 void selection_sort(int a[],int n){
     int i,j,min;
     for(i=0;i<n-1;i++){
@@ -33,6 +35,7 @@ void selection_sort(int a[],int n){
     }
 }
 
+// code for quick sort
 int part(int a[],int low, int high){
     int i = low;
     int j = high;
@@ -65,6 +68,7 @@ void quick_sort(int a[], int low, int high){
     }
 }
 
+//code for merge sort
 void merge(int a[],int i1, int i2, int j1, int j2){
     int temp[50];
     int i = i1, j=j1, k=0;
@@ -99,6 +103,7 @@ void merge_sort(int a[],int i, int j){
     }
 }
 
+//main code
 int main()
 {
     int arr[] = {1,6,5,43,2,};
