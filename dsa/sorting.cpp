@@ -106,10 +106,10 @@ void merge_sort(int a[],int i, int j){
 //main code
 int main()
 {
-    int arr[] = {1,6,5,43,2,};
+    int arr[] = {1,6,5,43,2,37,22,70};
     // insertion_sort(arr,5);
-    quick_sort(arr,0,4);
-    for(int i=0;i<5;i++){
+    merge_sort(arr,0,7);
+    for(int i=0;i<8;i++){
         printf("%d ",arr[i]);
     }
 }
